@@ -2,9 +2,8 @@ import java.util.*;
 import java.io.*;
 
 class Solution {
-            public static String solution(String[] participant, String[] completion) {
+    public static String solution(String[] participant, String[] completion) {
         HashMap<String, Integer> participantMap = new HashMap<>();
-        HashMap<String, Integer> completionMap = new HashMap<>();
 
         for (String p : participant) {
             participantMap.put(p, participantMap.getOrDefault(p, 0)+1);     // participantMap<이름, 숫자>
@@ -23,5 +22,4 @@ class Solution {
         return sb.toString();
 
     }
-
 }
